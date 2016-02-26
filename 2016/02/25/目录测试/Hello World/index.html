@@ -4,30 +4,30 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Hello-World | Do you wanna build a snowman?</title>
+  <title>Hello World | Do you wanna build a snowman?</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="youdao_share搭配Hexo，用有道云协作的群共享里面的Markdown来写blog.将此脚本放在hexo blog目录下，用crontab自动检查同步然后生成静态资源.
-安装12$ cd ~/blog$ git clone git@github.com:wuxc/youdao\_share.git sync
+安装12$ cd ~/blog$ git clone git@github.com:wuxc/youdao_share.git sync
 配置
 在有道云协作建个群，共享一个文件夹，记下gid和共享token
-修改syn">
+修改sync">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello-World">
-<meta property="og:url" content="http://wuxc.github.io/2016/02/25/目录测试/Hello-World/index.html">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="http://wuxc.github.io/2016/02/25/目录测试/Hello World/index.html">
 <meta property="og:site_name" content="Do you wanna build a snowman?">
 <meta property="og:description" content="youdao_share搭配Hexo，用有道云协作的群共享里面的Markdown来写blog.将此脚本放在hexo blog目录下，用crontab自动检查同步然后生成静态资源.
-安装12$ cd ~/blog$ git clone git@github.com:wuxc/youdao\_share.git sync
+安装12$ cd ~/blog$ git clone git@github.com:wuxc/youdao_share.git sync
 配置
 在有道云协作建个群，共享一个文件夹，记下gid和共享token
-修改syn">
-<meta property="og:updated_time" content="2016-02-25T16:14:59.900Z">
+修改sync">
+<meta property="og:updated_time" content="2016-02-26T02:03:54.755Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello-World">
+<meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="youdao_share搭配Hexo，用有道云协作的群共享里面的Markdown来写blog.将此脚本放在hexo blog目录下，用crontab自动检查同步然后生成静态资源.
-安装12$ cd ~/blog$ git clone git@github.com:wuxc/youdao\_share.git sync
+安装12$ cd ~/blog$ git clone git@github.com:wuxc/youdao_share.git sync
 配置
 在有道云协作建个群，共享一个文件夹，记下gid和共享token
-修改syn">
+修改sync">
   
     <link rel="alternative" href="/atom.xml" title="Do you wanna build a snowman?" type="application/atom+xml">
   
@@ -209,10 +209,10 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-目录测试/Hello-World" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-目录测试/Hello World" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/02/25/目录测试/Hello-World/" class="article-date">
+      <a href="/2016/02/25/目录测试/Hello World/" class="article-date">
   	<time datetime="2016-02-25T00:01:17.000Z" itemprop="datePublished">2016-02-25</time>
 </a>
     </div>
@@ -226,7 +226,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello-World
+      Hello World
     </h1>
   
 
@@ -243,11 +243,11 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="youdao-share"><a href="#youdao-share" class="headerlink" title="youdao_share"></a>youdao_share</h3><p>搭配Hexo，用有道云协作的群共享里面的Markdown来写blog.<br>将此脚本放在hexo blog目录下，用crontab自动检查同步然后生成静态资源.</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/blog</span><br><span class="line">$ git <span class="built_in">clone</span> git@github.com:wuxc/youdao\_share.git sync</span><br></pre></td></tr></table></figure>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/blog</span><br><span class="line">$ git <span class="built_in">clone</span> git@github.com:wuxc/youdao_share.git sync</span><br></pre></td></tr></table></figure>
 <h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><ul>
 <li>在有道云协作建个群，共享一个文件夹，记下gid和共享token</li>
 <li>修改sync_youdao.py，填入gid和token, 如果没check到hexo根目录下，需要额外配一下savedir</li>
-<li>增加crontab，例如: <code>0 */15 * * * flock -xn ~wuxc/blog/sync/lock sh ~wuxc/blog/sync/update.sh</code></li>
+<li>增加crontab，例如: <code>*/45 * * * * flock -xn ~wuxc/blog/sync/lock sh ~wuxc/blog/sync/update.sh &gt; ~wuxc/blog/sync/update.log 2&gt;&amp;1</code></li>
 </ul>
 
       
@@ -258,20 +258,15 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/02/26/a-good-start-is-half-success/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/02/25/目录测试/Hello-World/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          a-good-start-is-half-success
+          Hello-World
         
       </div>
     </a>
   
-  
-    <a href="/2016/02/25/目录测试/Hello World/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
   
 </nav>
 
@@ -304,7 +299,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="目录测试/Hello-World" data-title="Hello-World" data-url="http://wuxc.github.io/2016/02/25/目录测试/Hello-World/"></div>
+	<div class="ds-thread" data-thread-key="目录测试/Hello World" data-title="Hello World" data-url="http://wuxc.github.io/2016/02/25/目录测试/Hello World/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

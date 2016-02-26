@@ -198,6 +198,59 @@
 
       <div class="body-wrap">
   
+    <article id="post-A good start is half success" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/26/A good start is half success/" class="article-date">
+  	<time datetime="2016-02-25T16:06:38.000Z" itemprop="datePublished">2016-02-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/26/A good start is half success/">A good start is half success</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="好的开始是成功的一半"><a href="#好的开始是成功的一半" class="headerlink" title="好的开始是成功的一半"></a>好的开始是成功的一半</h3><p><img src="http://img3.douban.com/icon/ul36025140-75.jpg" alt="image"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-a-good-start-is-half-success" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -283,6 +336,65 @@
 <li>在有道云协作建个群，共享一个文件夹，记下gid和共享token</li>
 <li>修改sync_youdao.py，填入gid和token, 如果没check到hexo根目录下，需要额外配一下savedir</li>
 <li>增加crontab，例如: <code>0 */15 * * * flock -xn ~wuxc/blog/sync/lock sh ~wuxc/blog/sync/update.sh</code></li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-目录测试/Hello World" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/25/目录测试/Hello World/" class="article-date">
+  	<time datetime="2016-02-25T00:01:17.000Z" itemprop="datePublished">2016-02-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/25/目录测试/Hello World/">Hello World</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="youdao-share"><a href="#youdao-share" class="headerlink" title="youdao_share"></a>youdao_share</h3><p>搭配Hexo，用有道云协作的群共享里面的Markdown来写blog.<br>将此脚本放在hexo blog目录下，用crontab自动检查同步然后生成静态资源.</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/blog</span><br><span class="line">$ git <span class="built_in">clone</span> git@github.com:wuxc/youdao_share.git sync</span><br></pre></td></tr></table></figure>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><ul>
+<li>在有道云协作建个群，共享一个文件夹，记下gid和共享token</li>
+<li>修改sync_youdao.py，填入gid和token, 如果没check到hexo根目录下，需要额外配一下savedir</li>
+<li>增加crontab，例如: <code>*/45 * * * * flock -xn ~wuxc/blog/sync/lock sh ~wuxc/blog/sync/update.sh &gt; ~wuxc/blog/sync/update.log 2&gt;&amp;1</code></li>
 </ul>
 
       
